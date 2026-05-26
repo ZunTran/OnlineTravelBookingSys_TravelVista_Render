@@ -1,4 +1,4 @@
-FROM tomcat:11.0-jdk17
+FROM tomcat:10.1-jdk17
 
 # Xóa sạch các app mặc định của Tomcat để tránh tranh chấp cổng
 RUN rm -rf /usr/local/tomcat/webapps/*
