@@ -37,7 +37,11 @@ public class DispatcherServletInit extends AbstractAnnotationConfigDispatcherSer
         return new String[]{"/"};
     }
 
-    @Override
+//    @Override
+//    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+//        registration.setMultipartConfig(new MultipartConfigElement("D:/temp",5000000 , 15000000, 0));
+//    }
+     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig(
             new MultipartConfigElement(
